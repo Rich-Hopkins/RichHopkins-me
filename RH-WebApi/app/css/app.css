@@ -1,7 +1,6 @@
 ﻿body { }
 
-.navbar-brand img {
-	padding: 0;
-	height: 50px;
-	margin-top: -15px
+.navbar-left img {
+	margin-left: -5px;
+	margin-right: 10px;
 }
