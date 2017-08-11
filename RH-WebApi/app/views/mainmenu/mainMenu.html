@@ -1,0 +1,27 @@
+﻿<div ng-controller="MainMenu">
+	<nav class="navbar navbar-fixed navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" ng-init="isNavCollapsed = true" ng-click="isNavCollapsed = !isNavCollapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="" ng-click="navigate('')">
+					<span>
+						<img src="/app/images/Profile-square-75w.jpg" />
+						Rich Hopkins
+					</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
+				<ul class="nav navbar-nav">
+					<li><a href ng-click="navigate('about')">About</a></li>
+					<li><a href ng-click="navigate('portfolio')">Portfolio</a></li>
+					<li><a href ng-click="navigate('contact')">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+</div>

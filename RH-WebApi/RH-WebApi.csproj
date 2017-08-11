@@ -81,10 +81,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\css\app.css" />
+    <Content Include="app\css\bootstrap.css" />
     <Content Include="app\images\Profile-100w.jpg" />
     <Content Include="app\images\Profile-200w.jpg" />
     <Content Include="app\images\Profile-400w.jpg" />
     <Content Include="app\images\Profile-800w.jpg" />
+    <Content Include="app\images\Profile-square-200w.jpg" />
+    <Content Include="app\images\Profile-square-400w.jpg" />
+    <Content Include="app\images\Profile-square-75w.jpg" />
     <Content Include="app\images\Tri-Motor-3x2-1200w.jpg" />
     <Content Include="app\images\Tri-Motor-3x2-2000w.jpg" />
     <Content Include="app\images\Tri-Motor-3x2-3000w.jpg" />
@@ -93,6 +97,12 @@
     <Content Include="app\images\Tri-Motor-Tail-9x16-1080w.jpg" />
     <Content Include="app\images\Tri-Motor-Tail-9x16-270w.jpg" />
     <Content Include="app\images\Tri-Motor-Tail-9x16-540w.jpg" />
+    <Content Include="app\scripts\app.js" />
+    <Content Include="app\scripts\ui-bootstrap-tpls-2.5.0.min.js" />
+    <Content Include="app\views\home\home.html" />
+    <Content Include="app\views\home\homeController.js" />
+    <Content Include="app\views\mainmenu\mainMenu.html" />
+    <Content Include="app\views\mainmenu\mainMenuController.js" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
@@ -114,9 +124,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\scripts\" />
-    <Folder Include="app\views\home\" />
-    <Folder Include="app\views\mainmenu\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
