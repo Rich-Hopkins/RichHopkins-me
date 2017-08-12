@@ -1,4 +1,28 @@
-﻿body { }
+﻿
+@media (min-width: 93rem) {
+	body {
+		background-image: url('../images/Tri-Motor-3x2-3000w.jpg');
+	}
+}
+
+/*@media (min-width: 61rem) and (max-width: 100rem) {
+	body {
+		background-image: url('/app/images/Tri-Motor-Tail-9x16-1080w.jpg');
+	}
+}
+
+@media (max-width: 60rem) {
+	body {
+		background-image: url('/app/images/Tri-Motor-Tail-9x16-540w.jpg');
+	}
+}*/
+
+body {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: 100%;
+}
 
 .navbar-left img {
 	margin-left: -5px;

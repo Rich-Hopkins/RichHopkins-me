@@ -16,6 +16,11 @@
 					controllerAs: 'home',
 					templateUrl: 'app/views/home/home.html'
 				})
+				.when('/netflix',
+					{
+						redirectTo: '/'
+						//whatsonnetflix.com/netflix-hacks/the-netflix-id-bible-every-category-on-netflix
+					})
 				.when('/about',
 				{
 					controller: 'About',
