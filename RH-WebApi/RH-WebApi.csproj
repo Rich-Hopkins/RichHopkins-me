@@ -82,6 +82,7 @@
   <ItemGroup>
     <Content Include="app\css\app.css" />
     <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\images\Profile-100w.jpg" />
     <Content Include="app\images\Profile-200w.jpg" />
     <Content Include="app\images\Profile-400w.jpg" />
@@ -117,6 +118,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -125,6 +130,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="app\images\slides\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
