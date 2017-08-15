@@ -24,22 +24,33 @@
 	<link rel="stylesheet" href="app/css/bootstrap.css" />
 	<link rel="stylesheet" href="app/css/app.css" />
 	<!--<link rel="icon" type="image.png" href="favicon.png" />-->
-
 	<base href="/" />
 </head>
+
 <body ng-app="app">
 	<div ng-include src="'/app/views/mainmenu/mainmenu.html'"></div>
-<div class="container-fluid body-wrap">
-	<div class="main" ng-view autoscroll="true">
-		<!--Views Here-->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-sm-12 transparent-white">
+				<div class="col-md-9 col-sm-12">
+					<h1>Rich Hopkins</h1>
+					<p>Web developer, aviation enthusiast, amateur photographer</p>
+				</div>
+				<div class="col-md-2 col-sm-12">
+					<img class="img-border max-150h" src="app/images/Profile-200w.jpg"/>
+				</div>
+			</div>
+		</div>
+		<div ng-view autoscroll="true">
+			<!--Views Here-->
+		</div>
 	</div>
-</div>
-	
-<footer>
-	<div>©2017 Richard Hopkins | All rights reserved</div>
-</footer>
 
-<!--jQuery-->
+	<footer>
+		<div>©2017 Richard Hopkins | All rights reserved</div>
+	</footer>
+
+	<!--jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 	<!--Angular-->

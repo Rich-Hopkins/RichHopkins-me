@@ -91,7 +91,6 @@
     <Content Include="app\images\Profile-square-75w.jpg" />
     <Content Include="app\images\Tri-Motor-3x2-1200w.jpg" />
     <Content Include="app\images\Tri-Motor-3x2-2000w.jpg" />
-    <Content Include="app\images\Tri-Motor-3x2-3000w.jpg" />
     <Content Include="app\images\Tri-Motor-3x2-300w.jpg" />
     <Content Include="app\images\Tri-Motor-3x2-600w.jpg" />
     <Content Include="app\images\Tri-Motor-Tail-9x16-1080w.jpg" />
