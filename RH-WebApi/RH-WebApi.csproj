@@ -99,6 +99,8 @@
     <Content Include="app\images\Tri-Motor-Tail-9x16-540w.jpg" />
     <Content Include="app\scripts\app.js" />
     <Content Include="app\scripts\ui-bootstrap-tpls-2.5.0.min.js" />
+    <Content Include="app\views\about\about.html" />
+    <Content Include="app\views\about\aboutController.js" />
     <Content Include="app\views\home\home.html" />
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\mainmenu\mainMenu.html" />
