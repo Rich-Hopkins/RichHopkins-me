@@ -1,3 +1,5 @@
+/*http://paletton.com/#uid=13B0u0ksMQThhUpndSwFHOxLbuC*/ 
+
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
 /*!
  * bootswatch v3.3.7
@@ -13,9 +15,9 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;

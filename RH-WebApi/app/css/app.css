@@ -1,7 +1,12 @@
-﻿
+﻿/*http://paletton.com/#uid=13B0u0ksMQThhUpndSwFHOxLbuC*/
+
 @media (min-width: 1400px) and (min-aspect-ratio: 3/2) {
 	body {
 		background-image: url('../images/Tri-Motor-3x2-2000w.jpg');
+	}
+
+	.img-header-div {
+		text-align: right;
 	}
 }
 
@@ -21,6 +26,11 @@
 	body {
 		background-image: url('/app/images/Tri-Motor-Tail-9x16-540w.jpg');
 		background-color: #657396;
+	}
+
+	.img-header-div img {
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
@@ -45,18 +55,51 @@ body {
 }
 
 .slideshow img {
-	height: 500px;
+	max-height: 500px;
+	max-width: 100%;
 }
 
 .img-border {
 	border: 2px solid #2780e3
 }
 
-.max-135h {
+.img-header {
 	max-height: 135px;
+	margin-right: 2rem;
+}
+
+/*Text Effects*/
+.slideshow h3, .slideshow p {
+	text-shadow: 1px 0px 0px black, 1px 1px 2px black, 0px 1px 2px black, -1px 1px 2px black, -1px 0px 2px black, -1px -1px 2px black, 0px -1px 2px black, 1px -1px 2px black, 2px 4px 8px black;
+}
+
+.carousel-head {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: -1rem;
+	margin-bottom: 1rem;
+}
+
+.carousel-foot {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: -1rem;
+}
+
+.slideshow h4 {
+	font-weight: bold;
 }
 
 /*Containers*/
+.header {
+	border-bottom: 2px solid #0C6EDC;
+	/*border-radius: 10px;*/
+	background-color: rgba(119, 175, 237, .6);
+	/*margin-top: 3rem;*/
+	font-size: 2rem;
+	padding: 2rem;
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
@@ -70,7 +113,7 @@ footer {
 
 .transparent-white {
 	border: 1px solid grey;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 	background-color: rgba(255,255,255,.8);
 	margin-top: 3rem;
 	font-size: 2rem;

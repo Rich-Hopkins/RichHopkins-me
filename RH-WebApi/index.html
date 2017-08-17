@@ -17,8 +17,8 @@
 	<!--OpenGraph-->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Rich Hopkins - Web Developer">
-	<meta property="og:url" content="http://www.richhopkins.me">
-	<meta property="og:image" content="http://fpcoakwood.org/assets/images/building-opengraph-small.jpg">
+	<meta property="og:url" content="http://richdev.azurewebsites.net">
+	<meta property="og:image" content="http://richdev.azurewebsites.net/app/images/slides/Tri-Motor-Copilot.jpg">
 	<meta property="og:description" content="Rich Hopkins is a web developer with experience using AngularJS and .NET Web API, as well as an aviation and photography enthusiast. ">
 
 	<link rel="stylesheet" href="app/css/bootstrap.css" />
@@ -27,23 +27,20 @@
 	<base href="/" />
 </head>
 
-<body ng-app="app">
+<body ng-app="app" ng-cloak>
 	<div ng-include src="'/app/views/mainmenu/mainmenu.html'"></div>
-	<div class="container-fluid">
-		<div class="row col-md-12">
-			<div class="col-md-6 col-md-offset-3 col-sm-12 transparent-white">
-				<div class="col-md-9 col-sm-12">
-					<h1>Rich Hopkins</h1>
-					<p>Web developer, aviation enthusiast, amateur photographer</p>
-				</div>
-				<div class="col-md-2 col-sm-12">
-					<img class="img-border max-135h" src="app/images/Profile-200w.jpg"/>
-				</div>
-			</div>
+	<div class="col-md-12 col-sm-12 header">
+		<div class="col-md-6 col-md-offset-2 col-sm-12">
+			<h1>Rich Hopkins</h1>
+			<p>Web developer, aviation enthusiast, amateur photographer</p>
 		</div>
-		<div ng-view autoscroll="true">
-			<!--Views Here-->
+		<div class="col-md-2 col-sm-12 img-header-div">
+			<img class="img-border img-header" src="app/images/Tri-Motor-Copilot.jpg" />
 		</div>
+	</div>
+
+	<div class="container-fluid" ng-view autoscroll="true">
+		<!--Views Here-->
 	</div>
 
 	<footer>
@@ -67,5 +64,6 @@
 	<script src="app/scripts/app.js"></script>
 	<script src="app/views/home/homeController.js"></script>
 	<script src="app/views/mainmenu/mainMenuController.js"></script>
+	<script src="app/scripts/services/SlideService.js"></script>
 </body>
 </html>
