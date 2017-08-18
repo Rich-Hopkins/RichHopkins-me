@@ -1,39 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
+using System.Web.UI.WebControls;
+using RH_WebApi.Models;
 
 namespace RH_WebApi.Controllers
 {
 	public class PortfolioController : ApiController
 	{
-		// GET api/<controller>
-		public IEnumerable<string> Get()
+		private List<int> idList = new List<int>();
+
+		public IEnumerable<Site> GetAllSites()
 		{
-			return new string[] { "value1", "value2" };
+			var sites = new List<Site>();
+			var path = HttpRuntime.AppDomainAppPath + "App_Data/portfolioData.txt";
+			try
+			{
+				using (StreamReader file = new StreamReader(path))
+				{
+					string line;
+					while ((line = file.ReadLine()) != null)
+					{
+						int id = GetIdNumber(line);
+						
+						sites.Add(new Site()
+						{
+							Id = id,
+							Title = file.ReadLine(),
+							ImageUrl = "app/images/portfolio/" + file.ReadLine(),
+							LinkUrl = file.ReadLine(),
+							Caption = file.ReadLine()
+						});
+						id++;
+					}
+				}
+			}
+			catch (Exception)
+			{
+
+			}
+			sites.Sort((x,y) => x.Id.CompareTo(y.Id));
+			return sites;
 		}
 
-		// GET api/<controller>/5
-		public string Get(int id)
+		private int GetIdNumber(string line)
 		{
-			return "value";
-		}
+			int id = 0;
+			if (line != "")
+			{
+				int.TryParse(line, out id);
+			}
 
-		// POST api/<controller>
-		public void Post([FromBody]string value)
-		{
-		}
-
-		// PUT api/<controller>/5
-		public void Put(int id, [FromBody]string value)
-		{
-		}
-
-		// DELETE api/<controller>/5
-		public void Delete(int id)
-		{
+			while (idList.Contains(id))
+			{
+				Random r = new Random();
+				id = r.Next(100);
+			}
+			idList.Add(id);
+			return id;
 		}
 	}
 }

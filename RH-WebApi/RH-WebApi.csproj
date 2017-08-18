@@ -86,6 +86,7 @@
     <Content Include="app\images\portfolio\event-viewer.jpg" />
     <Content Include="app\images\portfolio\fpc.jpg" />
     <Content Include="app\images\portfolio\github.jpg" />
+    <Content Include="app\images\portfolio\richweb.jpg" />
     <Content Include="app\images\portfolio\travel-site.jpg" />
     <Content Include="app\images\Profile-100w.jpg" />
     <Content Include="app\images\Profile-200w.jpg" />
@@ -113,6 +114,7 @@
     <Content Include="app\scripts\app.js" />
     <Content Include="app\scripts\Directives\rhCarousel.js" />
     <Content Include="app\scripts\Directives\rhPortfolioTile.js" />
+    <Content Include="app\scripts\services\PortfolioService.js" />
     <Content Include="app\scripts\services\SlideService.js" />
     <Content Include="app\scripts\ui-bootstrap-tpls-2.5.0.min.js" />
     <Content Include="app\views\about\about.html" />

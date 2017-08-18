@@ -2,4 +2,4 @@
 	<img src="{{tile.ImageUrl}}" />
 	<h3>{{tile.Title}}</h3>
 </a>
-<p>{{tile.Caption}}</p>
+<p ng-bind-html ="tile.Caption | linky:'_blank'"></p>
