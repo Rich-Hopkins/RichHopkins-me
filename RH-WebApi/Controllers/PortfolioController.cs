@@ -15,9 +15,9 @@ namespace RH_WebApi.Controllers
 	{
 		private List<int> idList = new List<int>();
 
-		public IEnumerable<Site> GetAllSites()
+		public IEnumerable<Tile> GetAllSites()
 		{
-			var sites = new List<Site>();
+			var sites = new List<Tile>();
 			var path = HttpRuntime.AppDomainAppPath + "App_Data/portfolioData.txt";
 			try
 			{
@@ -28,13 +28,15 @@ namespace RH_WebApi.Controllers
 					{
 						int id = GetIdNumber(line);
 						
-						sites.Add(new Site()
+						sites.Add(new Tile()
 						{
 							Id = id,
 							Title = file.ReadLine(),
 							ImageUrl = "app/images/portfolio/" + file.ReadLine(),
 							LinkUrl = file.ReadLine(),
-							Caption = file.ReadLine()
+							Caption = file.ReadLine(),
+							CourseName = file.ReadLine(),
+							CourseUrl = file.ReadLine()
 						});
 						id++;
 					}

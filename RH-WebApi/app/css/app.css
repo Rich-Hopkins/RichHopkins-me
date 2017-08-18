@@ -153,6 +153,7 @@ footer {
 	.portfolio-grid div {
 		border: 1px solid #2780e3;
 		padding: 1rem;
+		text-align: center;
 	}
 
 	.portfolio-grid img {

@@ -3,18 +3,26 @@ GitHub
 github.jpg
 https://github.com/Rich-Hopkins/FPCOakwood-AngularJS
 My GitHub profile, starting with my most recent repo.
+
+
 1
 First Pentecostal Church
 fpc.jpg
 http://fpcoakwood.org
 I created this site for my church, and used it to teach myself AngularJS and ASP.NET Web API.
 
+
+0
 TheRichWeb
 richweb.jpg
 http://therichweb.com
-This is one of the earliest projects that I did as part of FreeCodeCamp: https://www.freecodecamp.org/rich-hopkins
-
+This is one of the earliest projects that I did as part of 
+FreeCodeCamp
+https://www.freecodecamp.org/rich-hopkins
+0
 Event Viewer
 event-viewer.jpg
 http://events.richhopkins.me/
-This is a project that I worked through as part of the Angular Fundamentals Pluralsight course: https://app.pluralsight.com/library/courses/angularjs-fundamentals/
+This is a project that I worked through as part of the 
+Angular Fundamentals Pluralsight course
+https://app.pluralsight.com/library/courses/angularjs-fundamentals/
