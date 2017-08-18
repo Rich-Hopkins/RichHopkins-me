@@ -10,15 +10,11 @@
 		margin-left: auto;
 		margin-right: 1rem;
 	}
-
-	/*.img-header-div {
-		text-align: right;
-	}*/
 }
 
 @media (max-width: 1399px) and (min-aspect-ratio: 3/2) {
 	body {
-		background-image: url('/app/images/Tri-Motor-3x2-2000w.jpg');
+		background-image: url('/app/images/Tri-Motor-3x2-1200w.jpg');
 	}
 
 	.img-header {
@@ -38,6 +34,10 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.header {
+		text-align: center;
+	}
 }
 
 @media (max-width: 799px) and (max-aspect-ratio: 3/2) {
@@ -50,6 +50,10 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.header {
+		text-align: center;
 	}
 }
 
@@ -79,7 +83,7 @@ body {
 }
 
 .img-border {
-	border: 2px solid #2780e3
+	border: 1px solid #2780e3;
 }
 
 .img-header {
@@ -88,7 +92,7 @@ body {
 
 /*Text Effects*/
 .slideshow h3, .slideshow p {
-	text-shadow: 1px 0px 0px black, 1px 1px 2px black, 0px 1px 2px black, -1px 1px 2px black, -1px 0px 2px black, -1px -1px 2px black, 0px -1px 2px black, 1px -1px 2px black, 2px 4px 8px black;
+	text-shadow: 1px 0px 0px #0C6EDC, 1px 1px 2px #0C6EDC, 0px 1px 2px #0C6EDC, -1px 1px 2px #0C6EDC, -1px 0px 2px #0C6EDC, -1px -1px 2px #0C6EDC, 0px -1px 2px #0C6EDC, 1px -1px 2px #0C6EDC, 2px 4px 8px #0C6EDC;
 }
 
 .carousel-head {
@@ -110,10 +114,12 @@ body {
 
 /*Containers*/
 .header {
-	border-bottom: 2px solid #0C6EDC;
-	background-color: rgba(119, 175, 237, .6);
+	border-bottom: 1px solid #0C6EDC;
+	background-color: rgba(119, 175, 237, .8);
+	color: white;
 	font-size: 2rem;
 	padding: 2rem;
+	text-shadow: 1px 0px 0px #0C6EDC, 1px 1px 2px #0C6EDC, 0px 1px 2px #0C6EDC, -1px 1px 2px #0C6EDC, -1px 0px 2px #0C6EDC, -1px -1px 2px #0C6EDC, 0px -1px 2px #0C6EDC, 1px -1px 2px #0C6EDC, 2px 4px 8px #0C6EDC;
 }
 
 footer {
@@ -135,3 +141,30 @@ footer {
 	font-size: 2rem;
 	padding: 2rem;
 }
+
+
+/*Portfolio Tiles*/
+.portfolio-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 1rem;
+}
+
+	.portfolio-grid div {
+		border: 1px solid #2780e3;
+		padding: 1rem;
+	}
+
+	.portfolio-grid img {
+		width: 100%;
+		border: 1px solid #2780e3;
+	}
+
+	.portfolio-grid p {
+		text-align: center;
+	}
+
+	.portfolio-grid h3 {
+		text-align: center;
+		font-weight: normal;
+	}

@@ -21,12 +21,13 @@
 						redirectTo: '/'
 						//whatsonnetflix.com/netflix-hacks/the-netflix-id-bible-every-category-on-netflix
 					})
-				.when('/about',
-				{
-					controller: 'About',
-					controllerAs: 'about',
-					templateUrl: 'app/views/about/about.html'
-				})
+				.when('/about', { redirectTo: '/' })
+				.when('/portfolio',
+					{
+						controller: 'Portfolio',
+						controllerAs: 'portfolio',
+						templateUrl: 'app/views/portfolio/portfolio.html'
+					})
 				.otherwise({ redirectTo: '/' });
 		}
 	]);

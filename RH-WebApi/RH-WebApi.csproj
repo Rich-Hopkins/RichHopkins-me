@@ -83,6 +83,10 @@
     <Content Include="app\css\app.css" />
     <Content Include="app\css\bootstrap.css" />
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\images\portfolio\event-viewer.jpg" />
+    <Content Include="app\images\portfolio\fpc.jpg" />
+    <Content Include="app\images\portfolio\github.jpg" />
+    <Content Include="app\images\portfolio\travel-site.jpg" />
     <Content Include="app\images\Profile-100w.jpg" />
     <Content Include="app\images\Profile-200w.jpg" />
     <Content Include="app\images\Profile-400w.jpg" />
@@ -107,6 +111,8 @@
     <Content Include="app\images\Tri-Motor-Tail-9x16-270w.jpg" />
     <Content Include="app\images\Tri-Motor-Tail-9x16-540w.jpg" />
     <Content Include="app\scripts\app.js" />
+    <Content Include="app\scripts\Directives\rhCarousel.js" />
+    <Content Include="app\scripts\Directives\rhPortfolioTile.js" />
     <Content Include="app\scripts\services\SlideService.js" />
     <Content Include="app\scripts\ui-bootstrap-tpls-2.5.0.min.js" />
     <Content Include="app\views\about\about.html" />
@@ -115,6 +121,11 @@
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\mainmenu\mainMenu.html" />
     <Content Include="app\views\mainmenu\mainMenuController.js" />
+    <Content Include="app\views\Portfolio\portfolio.html" />
+    <Content Include="app\views\Portfolio\portfolioController.js" />
+    <Content Include="app\views\templates\carousel.html" />
+    <Content Include="app\views\templates\portfolioTile.html" />
+    <Content Include="App_Data\portfolioData.txt" />
     <Content Include="App_Data\slideInfo.txt" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
@@ -122,10 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
     <Compile Include="Controllers\SlidesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Site.cs" />
     <Compile Include="Models\Slide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,0 +1,10 @@
+﻿0
+GitHub
+/app/images/portfolio/github.jpg
+https://github.com/Rich-Hopkins/FPCOakwood-AngularJS
+My GitHub profile, starting with my most recent repo.
+1
+First Pentecostal Church
+/app/images/portfolio/fpc.jpg
+http://fpcoakwood.org
+I created this site for my church, and used it to teach myself AngularJS and ASP.NET Web API.

@@ -1,18 +1,11 @@
-﻿<div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
-	<p class="carousel-head">Click an image to view a related website</p>
-	<div uib-carousel active="home.active" interval="home.interval" no-wrap="home.noWrapSlides">
-		<div class="slideshow" uib-slide ng-repeat="slide in home.slides" index="slide.Id">
-			<a href="{{slide.Link}}" target="_blank">
-				<img ng-src="{{slide.Image}}" style="margin: auto;"
-				     uib-tooltip="{{slide.Link}}"
-				     tooltip-append-to-body="true"
-				     tooltip-popup-close-delay="1000"/>
-				<div class="carousel-caption">
-					<h3>{{slide.Title}}</h3>
-					<p>{{slide.Caption}}</p>
-				</div>
-			</a>
+﻿<div class="container-fluid">
+	<div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
+		<p class="carousel-head">Click an image to view a related website</p>
+		<div uib-carousel active="home.active" interval="home.interval" no-wrap="home.noWrapSlides">
+			<div class="slideshow" uib-slide ng-repeat="slide in home.slides" index="slide.Id">
+				<rh-carousel></rh-carousel>
+			</div>
 		</div>
+		<p class="carousel-foot">All images ©2005-2017 Richard Hopkins | All rights reserved</p>
 	</div>
-	<p class="carousel-foot">All images ©2005-2017 Richard Hopkins | All rights reserved</p>
 </div>
