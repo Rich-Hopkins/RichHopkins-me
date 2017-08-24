@@ -1,79 +1,82 @@
 ﻿<!DOCTYPE html>
 <html>
 <head lang="en">
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Rich Hopkins - Web Developer</title>
+  <title>Rich Hopkins - Web Developer</title>
 
-	<meta name="description" content="Rich Hopkins - Web Developer">
-	<meta name="robots" content="index, nofollow">
-	<meta name="author" content="Richard Hopkins">
+  <meta name="description" content="Rich Hopkins - Web Developer">
+  <meta name="robots" content="index, nofollow">
+  <meta name="author" content="Richard Hopkins">
 
-	<!--OpenGraph-->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Rich Hopkins - Web Developer">
-	<meta property="og:url" content="http://richdev.azurewebsites.net">
-	<meta property="og:image" content="http://richdev.azurewebsites.net/app/images/slides/Tri-Motor-Copilot.jpg">
-	<meta property="og:description" content="Rich Hopkins is a web developer with experience using AngularJS and .NET Web API, as well as an aviation and photography enthusiast. ">
+  <!--OpenGraph-->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rich Hopkins - Web Developer">
+  <meta property="og:url" content="http://richdev.azurewebsites.net">
+  <meta property="og:image" content="http://richdev.azurewebsites.net/app/images/slides/Tri-Motor-Copilot.jpg">
+  <meta property="og:description" content="Rich Hopkins is a web developer with experience using AngularJS and .NET Web API, as well as an aviation and photography enthusiast. ">
 
-	<link rel="stylesheet" href="app/css/bootstrap.css" />
-	<link rel="stylesheet" href="app/css/app.css" />
+  <link rel="stylesheet" href="app/css/bootstrap.css" />
+  <link rel="stylesheet" href="app/css/app.css" />
 
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=GvkmBNM6Qz">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=GvkmBNM6Qz">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=GvkmBNM6Qz">
-    <link rel="manifest" href="/manifest.json?v=GvkmBNM6Qz">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=GvkmBNM6Qz" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon.ico?v=GvkmBNM6Qz">
-    <meta name="theme-color" content="#064f9f">
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=GvkmBNM6Qz">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=GvkmBNM6Qz">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=GvkmBNM6Qz">
+  <link rel="manifest" href="/manifest.json?v=GvkmBNM6Qz">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=GvkmBNM6Qz" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon.ico?v=GvkmBNM6Qz">
+  <meta name="theme-color" content="#064f9f">
 
-	<base href="/" />
+  <base href="/" />
 </head>
 
 <body ng-app="app" ng-cloak>
-	<div ng-include src="'/app/views/mainmenu/mainmenu.html'"></div>
-	<div class="col-md-12 col-sm-12 header">
-		<div class="col-md-6 col-md-offset-2 col-sm-12">
-			<h1 class="">Rich Hopkins</h1>
-			<p>Web developer, aviation enthusiast, amateur photographer</p>
-		</div>
-		<div class="col-md-2 col-sm-12 img-header-div">
-			<img class="img-border img-header" src="app/images/Tri-Motor-Copilot.jpg" />
-		</div>
-	</div>
+  <div ng-include src="'/app/views/mainmenu/mainmenu.html'"></div>
+  <div class="col-md-12 col-sm-12 header">
+    <div class="col-md-6 col-md-offset-2 col-sm-12">
+      <h1 class="">Rich Hopkins</h1>
+      <p>Web developer, aviation enthusiast, amateur photographer</p>
+    </div>
+    <div class="col-md-2 col-sm-12 img-header-div">
+      <img class="img-border img-header" src="app/images/Tri-Motor-Copilot.jpg" />
+    </div>
+  </div>
 
-	<div ng-view autoscroll="true">
-		<!--Views Here-->
-	</div>
+  <div ng-view autoscroll="true">
+    <!--Views Here-->
+  </div>
 
-	<footer>
-		<div>©2017 Richard Hopkins | All rights reserved</div>
-	</footer>
+  <footer>
+    <div>©2017 Richard Hopkins | All rights reserved</div>
+  </footer>
 
-	<!--jQuery-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
-	<!--Angular-->
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-touch.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
-	<script src="app/scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+  <!--Angular-->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-touch.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.js"></script>
+  <script src="app/scripts/ui-bootstrap-tpls-2.5.0.min.js"></script>
 
-	<!--App-->
-	<script src="app/scripts/app.js"></script>
-	<script src="app/scripts/services/SlideService.js"></script>
-	<script src="app/scripts/services/PortfolioService.js"></script>
-	<script src="app/views/mainmenu/mainMenuController.js"></script>
-	<script src="app/views/home/homeController.js"></script>
-	<script src="app/views/Portfolio/portfolioController.js"></script>
-	<script src="app/scripts/Directives/rhCarousel.js"></script>
-	<script src="app/scripts/Directives/rhPortfolioTile.js"></script>
+  <!--App-->
+  <script src="app/scripts/app.js"></script>
+  <script src="app/scripts/services/SlideService.js"></script>
+  <script src="app/scripts/services/PortfolioService.js"></script>
+  <script src="app/scripts/services/EmailService.js"></script>
+  <script src="app/views/mainmenu/mainMenuController.js"></script>
+  <script src="app/views/home/homeController.js"></script>
+  <script src="app/views/Portfolio/portfolioController.js"></script>
+  <script src="app/views/contact/contactController.js"></script>
+  <script src="app/scripts/Directives/rhCarousel.js"></script>
+  <script src="app/scripts/Directives/rhPortfolioTile.js"></script>
+  <script src="app/scripts/Directives/rhSelectOnClick.js"></script>
 </body>
 </html>
