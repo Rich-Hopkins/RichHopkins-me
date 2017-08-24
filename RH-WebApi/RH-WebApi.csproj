@@ -129,6 +129,8 @@
     <Content Include="app\views\about\aboutController.js" />
     <Content Include="app\views\contact\contact.html" />
     <Content Include="app\views\contact\contactController.js" />
+    <Content Include="app\views\dragdrop\dragdrop.html" />
+    <Content Include="app\views\dragdrop\dragdropController.js" />
     <Content Include="app\views\home\home.html" />
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\mainmenu\mainMenu.html" />
