@@ -4,7 +4,7 @@
 
 ![alt text](https://github.com/Rich-Hopkins/RichHopkins-me/blob/master/RH-WebApi/app/images/site-screenshot.jpg "Site screenshot")  
 
-This repo was created to manage my personal site.  
+This repo was created to manage my personal site. This site uses an AngularJS front end and ASP.NET Web API on the back end, and is hosted in Azure. 
 
 ### Folder Structure ###  
 (most auto-generated and third party files omitted from this tree)
