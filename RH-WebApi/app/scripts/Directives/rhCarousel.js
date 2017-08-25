@@ -6,7 +6,7 @@
 		.directive('rhCarousel',
 		function () {
 			return {
-				templateUrl: 'app/views/templates/carousel.html'
+				templateUrl: 'app/views/templates/homeCarousel.html'
 			};
 		});
 })();

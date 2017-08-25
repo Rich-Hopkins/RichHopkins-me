@@ -1,12 +1,12 @@
 ﻿(function () {
-    'use strict';
+  'use strict';
 
-    angular
-        .module('app')
-        .service('emailService', ['$resource', emailService]);
+  angular
+    .module('app')
+    .service('emailService', ['$resource', emailService]);
 
-    function emailService($resource) {
-        return $resource('/api/email');
-    };
+  function emailService($resource) {
+    return $resource('/api/email');
+  };
 
 })();

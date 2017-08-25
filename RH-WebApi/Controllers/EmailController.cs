@@ -17,7 +17,18 @@ namespace RH_WebApi.Controllers
             return "The email service is available.";
         }
 
-        [HttpPost]
+    [HttpPost]
+    public bool Post(string name, string address, string message, string body)
+    {
+      if(!string.IsNullOrEmpty(body))
+      {
+        throw new Exception("You are a bot.");
+      }
+      var msg = new Email(name, address, message);
+      return SendEmailMessage(msg);
+    }
+
+    [HttpPost]
         public bool Post(string name, string address, string message)
         {
             var msg = new Email(name, address, message);

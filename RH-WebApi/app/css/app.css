@@ -90,6 +90,15 @@ body {
 	max-height: 135px;
 }
 
+.img-social {
+  height: 3rem;
+}
+
+.div-social {
+  width: 4rem;
+  display: inline-block;
+}
+
 /*Text Formatting*/
 .slideshow h3, .slideshow p {
 	text-shadow: 1px 0px 0px #0C6EDC, 1px 1px 2px #0C6EDC, 0px 1px 2px #0C6EDC, -1px 1px 2px #0C6EDC, -1px 0px 2px #0C6EDC, -1px -1px 2px #0C6EDC, 0px -1px 2px #0C6EDC, 1px -1px 2px #0C6EDC, 2px 4px 8px #0C6EDC;
