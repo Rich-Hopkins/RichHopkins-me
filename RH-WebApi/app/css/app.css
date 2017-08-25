@@ -24,7 +24,7 @@
 	}
 }
 
-@media (min-width: 800px) and (max-aspect-ratio: 3/2) {
+@media (min-width: 800px) and (max-aspect-ratio: 4/3) {
 	body {
 		background-image: url('/app/images/Tri-Motor-Tail-9x16-1080w.jpg');
 	}
