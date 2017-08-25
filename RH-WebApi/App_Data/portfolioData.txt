@@ -26,3 +26,10 @@ http://events.richhopkins.me/
 This is a project that I worked through as part of the
 Angular Fundamentals Pluralsight course
 https://app.pluralsight.com/library/courses/angularjs-fundamentals/
+0
+Travel Site
+travel-site.jpg
+https://rich-hopkins.github.io/travel-site/
+This is a project I worked though as part of the Udemy Course
+Git a Web Developer Job: Mastering the Modern Workflow
+https://www.udemy.com/git-a-web-developer-job-mastering-the-modern-workflow/
