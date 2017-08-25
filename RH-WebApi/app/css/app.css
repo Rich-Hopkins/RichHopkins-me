@@ -12,7 +12,7 @@
 	}
 }
 
-@media (max-width: 1399px) and (min-aspect-ratio: 3/2) {
+@media (max-width: 1399px) and (min-aspect-ratio: 4/3) {
 	body {
 		background-image: url('/app/images/Tri-Motor-3x2-1200w.jpg');
 	}
@@ -24,7 +24,7 @@
 	}
 }
 
-@media (min-width: 800px) and (max-aspect-ratio: 4/3) {
+@media (min-width: 700px) and (max-aspect-ratio: 4/3) {
 	body {
 		background-image: url('/app/images/Tri-Motor-Tail-9x16-1080w.jpg');
 	}
@@ -40,7 +40,7 @@
 	}
 }
 
-@media (max-width: 799px) and (max-aspect-ratio: 3/2) {
+@media (max-width: 699px) and (max-aspect-ratio: 3/2) {
 	body {
 		background-image: url('/app/images/Tri-Motor-Tail-9x16-540w.jpg');
 		background-color: #657396;
