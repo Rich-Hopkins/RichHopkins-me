@@ -29,8 +29,9 @@
         })
         .when('/netflix',
         {
-          redirectTo: '/'
-          //whatsonnetflix.com/netflix-hacks/the-netflix-id-bible-every-category-on-netflix
+          controller: 'Netflix',
+          controllerAs: 'netflix',
+          templateUrl: 'app/views/netflix/netflix.html'
         })
         .otherwise({ redirectTo: '/' });
     }

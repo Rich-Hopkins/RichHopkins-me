@@ -15,9 +15,9 @@ namespace RH_WebApi.Controllers
 	{
 		private List<int> idList = new List<int>();
 
-		public IEnumerable<Tile> GetAllSites()
+		public IEnumerable<Tile> GetAllTiles()
 		{
-			var sites = new List<Tile>();
+			var tiles = new List<Tile>();
 			var path = HttpRuntime.AppDomainAppPath + "App_Data/portfolioData.txt";
 			try
 			{
@@ -28,7 +28,7 @@ namespace RH_WebApi.Controllers
 					{
 						int id = GetIdNumber(line);
 						
-						sites.Add(new Tile()
+						tiles.Add(new Tile()
 						{
 							Id = id,
 							Title = file.ReadLine(),
@@ -46,8 +46,8 @@ namespace RH_WebApi.Controllers
 			{
 
 			}
-			sites.Sort((x,y) => x.Id.CompareTo(y.Id));
-			return sites;
+			tiles.Sort((x,y) => x.Id.CompareTo(y.Id));
+			return tiles;
 		}
 
 		private int GetIdNumber(string line)

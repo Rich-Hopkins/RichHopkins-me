@@ -136,10 +136,13 @@
     <Content Include="app\views\home\homeController.js" />
     <Content Include="app\views\mainmenu\mainMenu.html" />
     <Content Include="app\views\mainmenu\mainMenuController.js" />
+    <Content Include="app\views\netflix\netflix.html" />
+    <Content Include="app\views\netflix\netflixController.js" />
     <Content Include="app\views\Portfolio\portfolio.html" />
     <Content Include="app\views\Portfolio\portfolioController.js" />
     <Content Include="app\views\templates\homeCarousel.html" />
     <Content Include="app\views\templates\portfolioTile.html" />
+    <Content Include="App_Data\netfilxData.txt" />
     <Content Include="App_Data\portfolioData.txt" />
     <Content Include="App_Data\slideInfo.txt" />
     <Content Include="browserconfig.xml" />
@@ -159,12 +162,14 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\NetflixController.cs" />
     <Compile Include="Controllers\PortfolioController.cs" />
     <Compile Include="Controllers\SlidesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Email.cs" />
+    <Compile Include="Models\MovieGenre.cs" />
     <Compile Include="Models\Tile.cs" />
     <Compile Include="Models\Slide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
