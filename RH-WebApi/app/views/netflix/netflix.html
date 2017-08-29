@@ -1,10 +1,20 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+﻿<div class="container-fluid">
+  <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
+    <h2>Netflix Sub-genres</h2>
+    <p>You can browse Netflix using sub-genres, giving you more control in narrowing your search. In order to do this, you can search using this URL: 'http://www.netflix.com/browse/genre/<span class="text-bold">SubGenreId</span>' replacing the SubGenreId with an Id number from the list below, or by simply clicking the links below. There are many more than what I've listed below, but I've limited the list to ones I believe are commonly used.</p>
+    <uib-accordion close-others="true">
+      <div ng-repeat="genre in netflix.genres | orderBy:'Genre'">
+        <div uib-accordion-group class="panel-default" is-open="isOpen">
+          <uib-accordion-heading>
+            {{genre.Genre}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isOpen, 'glyphicon-chevron-right': !isOpen}"></i>
+          </uib-accordion-heading>
 
-</body>
-</html>
+          <div ng-repeat="sub in genre.subGenres | orderBy:'SubGenre'" style="margin-left: 5rem">
+            <a href="http://www.netflix.com/browse/genre/{{sub.Id}}" target="_blank">{{sub.SubGenre}}: {{sub.Id}}</a>
+          </div>
+        </div>
+      </div>
+    </uib-accordion>
+  </div>
+</div>
+

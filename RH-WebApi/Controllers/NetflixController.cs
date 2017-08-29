@@ -12,7 +12,7 @@ namespace RH_WebApi.Controllers
 {
   public class NetflixController : ApiController
   {
-    public IEnumerable<MovieGenre> GetMovieGenres()
+    public object GetMovieGenres()
     {
       //http://whatsonnetflix.com/netflix-hacks/the-netflix-id-bible-every-category-on-netflix/
       var path = HttpRuntime.AppDomainAppPath + "App_Data/netfilxData.txt";
@@ -35,7 +35,10 @@ namespace RH_WebApi.Controllers
       {
         throw new Exception();
       }
-      return genres;
+      var groupedGenres = genres.GroupBy(g => g.Genre)
+        .Select(grp => new { Genre = grp.Key, subGenres = grp.ToList() })
+        .ToList();
+      return groupedGenres;
     }
   }
 }

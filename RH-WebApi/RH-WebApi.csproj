@@ -127,6 +127,7 @@
     <Content Include="app\scripts\Directives\rhPortfolioTile.js" />
     <Content Include="app\scripts\Directives\rhSelectOnClick.js" />
     <Content Include="app\scripts\services\EmailService.js" />
+    <Content Include="app\scripts\services\NetflixService.js" />
     <Content Include="app\scripts\services\PortfolioService.js" />
     <Content Include="app\scripts\services\SlideService.js" />
     <Content Include="app\scripts\libraries\ui-bootstrap-tpls-2.5.0.min.js" />

@@ -29,10 +29,10 @@ Children and Family,Movies for ages 8 to 10,561
 Children and Family,Movies for ages 11 to 12,6962
 Children and Family,Education for Kids,10659
 Children and Family,Disney,67673
-Children and Family,Movies based on children’s books,10056
+Children and Family,Movies based on children's books,10056
 Children and Family,Family Features,51056
 Children and Family,TV Cartoons,11177
-Children and Family,Kids’ TV,27346
+Children and Family,Kids' TV,27346
 Children and Family,Kids Music,52843
 Children and Family,Animal Tales,5507
 Classic Movies,Classic Movies,31574
@@ -60,12 +60,17 @@ Comedies,Satires,4922
 Comedies,Romantic Comedies,5475
 Comedies,Slapstick Comedies,10256
 Comedies,Cult Movies,7627
-Comedies,B-Horror Movies,8195
 Comedies,Campy Movies,1252
 Comedies,Cult Horror Movies,10944
 Comedies,Cult Sci-Fi & Fantasy,4734
 Comedies,Cult Comedies,9434
 Comedies,Independent Comedies,4195
+Cult Movies,Cult Movies,7627
+Cult Movies,B-Horror Movies,8195
+Cult Movies,Campy Movies,1252
+Cult Movies,Cult Horror Movies,10944
+Cult Movies,Cult Sci-Fi & Fantasy,4734
+Cult Movies,Cult Comedies,9434
 Documentaries,Documentaries,6839
 Documentaries,Biographical Documentaries,3652
 Documentaries,Crime Documentaries,9875
@@ -102,6 +107,10 @@ Dramas,Faith & Spirituality Movies,52804
 Dramas,Spiritual Documentaries,2760
 Dramas,Kids Faith & Spirituality,751423
 Dramas,Independent Dramas,384
+Faith & Spirituality,Faith & Spirituality,26835
+Faith & Spirituality,Faith & Spirituality Movies,52804
+Faith & Spirituality,Spiritual Documentaries,2760
+Faith & Spirituality,Kids Faith & Spirituality,751423
 Foreign Movies,Foreign Movies,7462
 Foreign Movies,Art House Movies,29764
 Foreign Movies,Foreign Action & Adventure,11828
@@ -109,7 +118,6 @@ Foreign Movies,Classic Foreign Movies,32473
 Foreign Movies,Foreign Comedies,4426
 Foreign Movies,Foreign Documentaries,5161
 Foreign Movies,Foreign Dramas,2150
-Foreign Movies,Foreign Gay & Lesbian Movies,8243
 Foreign Movies,Foreign Horror Movies,8654
 Foreign Movies,Foreign Sci-Fi & Fantasy,6485
 Foreign Movies,Foreign Thrillers,10306
@@ -156,6 +164,21 @@ Horror Movies,Experimental Movies,11079
 Horror Movies,Independent Action & Adventure,11804
 Horror Movies,Independent Thrillers,3269
 Horror Movies,Romantic Independent Movies,9916
+Independent Movies,Independent Movies,7077
+Independent Movies,Experimental Movies,11079
+Independent Movies,Independent Action & Adventure,11804
+Independent Movies,Independent Thrillers,3269
+Independent Movies,Romantic Independent Movies,9916
+Independent Movies,Independent Comedies,4195
+Independent Movies,Independent Dramas,384
+Music,Music,1701
+Music,Kids' Music,52843
+Music,Country & Western / Folk,1105
+Music,Jazz & Easy Listening,10271
+Music,Latin Music,10741
+Music,Urban & Dance Concerts,9472
+Music,World Music Concerts,2856
+Music,Rock & Pop Concerts,3278
 Musicals,Music,1701
 Musicals,Kids Music,52843
 Musicals,Country & Western/Folk,1105
@@ -175,7 +198,6 @@ Romance,Quirky Romance,36103
 Romance,Romantic Independent Movies,9916
 Romance,Romantic Foreign Movies,7153
 Romance,Romantic Dramas,1255
-Romance,Steamy Romantic Movies,35800
 Romance,Classic Romantic Movies,31273
 Romance,Romantic Comedies,5475
 Sci-Fi and Fantasy,Sci-Fi & Fantasy,1492
@@ -220,7 +242,7 @@ TV Shows,Classic TV Shows,46553
 TV Shows,Crime TV Shows,26146
 TV Shows,Cult TV Shows,74652
 TV Shows,Food & Travel TV,72436
-TV Shows,Kids’ TV,27346
+TV Shows,Kids' TV,27346
 TV Shows,Korean TV Shows,67879
 TV Shows,Miniseries,4814
 TV Shows,Military TV Shows,25804
