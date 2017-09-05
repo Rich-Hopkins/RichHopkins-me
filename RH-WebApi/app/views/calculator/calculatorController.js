@@ -36,20 +36,20 @@
       }
     };
 
-    vm.allClear = function () {
+    vm.allClear = function() {
       vm.display = '0';
       vm.operands = [];
       vm.operators = [];
       vm.running = '';
       vm.invalid = false;
-    }
+    };
 
-    vm.clearEntry = function () {
+    vm.clearEntry = function() {
       vm.display = '0';
       vm.invalid = false;
-    }
+    };
 
-    vm.operation = function (oper) {
+    vm.operation = function(oper) {
       if (!isNaN(vm.display) && vm.display !== '') {
         vm.running += vm.display;
         vm.running += oper;
@@ -62,9 +62,9 @@
         vm.running += oper;
       }
       vm.display = oper;
-    }
+    };
 
-    vm.equals = function () {
+    vm.equals = function() {
       if (displayNumeric(vm.display)) {
         vm.operands.push(vm.display);
         vm.running += vm.display;
@@ -78,7 +78,7 @@
       }
       vm.running += '=';
       vm.reset = true;
-    }
+    };
 
     return vm;
   }
@@ -100,6 +100,5 @@
     }
 
     return total;
-  }
-
+  };
 })();

@@ -38,6 +38,12 @@
             controller: 'Calculator',
             controllerAs: 'calculator',
             templateUrl: 'app/views/calculator/calculator.html'
+        })
+        .when('/pomodoro',
+          {
+            controller: 'Pomodoro',
+            controllerAs: 'pomodoro',
+            templateUrl: 'app/views/pomodoro/pomodoro.html'
           })
         .otherwise({ redirectTo: '/' });
     }

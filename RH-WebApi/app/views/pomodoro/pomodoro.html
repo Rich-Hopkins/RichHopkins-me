@@ -1,0 +1,20 @@
+﻿<div class="container-fluid">
+  <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
+    <h2>Pomodoro Timer</h2>
+    <p>This page was built to satisfy the Pomodoro timer project in <a href="https://www.freecodecamp.org/challenges/build-a-pomodoro-clock" target="_blank">FreeCodeCamp</a>.</p>
+    <div class="pomodoro-grid col-md-6 col-md-offset-3 col-sm-12">
+      <div class="pomodoro-length">
+        <h3>Break Length</h3>
+        <a ng-click="pomodoro.adjustLength('break', '-')">-</a>
+        <span>{{pomodoro.breakLength}}</span>
+        <a ng-click="pomodoro.adjustLength('break', '+')">+</a>
+      </div>
+      <div class="pomodoro-length">
+        <h3>Session Length</h3>
+        <a ng-click="pomodoro.adjustLength('session', '-')">-</a>
+        <span>{{pomodoro.sessionLength}}</span>
+        <a ng-click="pomodoro.adjustLength('session', '+')">+</a>
+      </div>
+    </div>
+  </div>
+</div>

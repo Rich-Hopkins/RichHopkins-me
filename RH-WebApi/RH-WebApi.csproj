@@ -84,6 +84,9 @@
     <Content Include="android-chrome-192x192.png" />
     <Content Include="android-chrome-256x256.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="app\audio\communication-channel.mp3" />
+    <Content Include="app\audio\filling-your-inbox.mp3" />
+    <Content Include="app\audio\gets-in-the-way.mp3" />
     <Content Include="app\css\app.css" />
     <Content Include="app\css\bootstrap.css" />
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
@@ -141,6 +144,8 @@
     <Content Include="app\views\mainmenu\mainMenuController.js" />
     <Content Include="app\views\netflix\netflix.html" />
     <Content Include="app\views\netflix\netflixController.js" />
+    <Content Include="app\views\pomodoro\pomodoro.html" />
+    <Content Include="app\views\pomodoro\pomodoroController.js" />
     <Content Include="app\views\Portfolio\portfolio.html" />
     <Content Include="app\views\Portfolio\portfolioController.js" />
     <Content Include="app\views\templates\homeCarousel.html" />
