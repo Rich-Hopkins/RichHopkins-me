@@ -15,6 +15,7 @@
     vm.reset = false;
 
     vm.concat = function (charToAdd) {
+      if (vm.reset) vm.running = '';
       if (!displayNumeric(vm.display) || vm.display === '0' || vm.reset) {
         vm.display = '';
         vm.reset = false;
@@ -72,7 +73,6 @@
       }
       vm.operands = [];
       vm.operators = [];
-      vm.running = '';
       vm.reset = true;
     }
 
