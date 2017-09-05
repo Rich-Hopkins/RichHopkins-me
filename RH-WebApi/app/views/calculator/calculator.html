@@ -1,0 +1,36 @@
+﻿<div class="container-fluid">
+  <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
+    <h2>Calculator</h2>
+    <p>This calculator was built to satisfy the JavaScript Calculator project in <a href="https://www.freecodecamp.org/challenges/build-a-javascript-calculator" target="_blank">FreeCodeCamp</a>.</p>
+    <div class="calculator-body col-lg-6 col-lg-offset-3 col-sm-12">
+      <div>
+        <h3>FreeCodeCamp</h3>
+        <h5>Calculator</h5>
+        <div class="col-md-8 col-md-offset-2 col-sm-12">
+          <div class="calculator-grid">
+            <div class="calculator-display">{{calculator.display}}</div>
+            <button class="btn btn-danger" ng-click="calculator.clear()">AC</button>
+            <button class="btn btn-danger" >CE</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid">&divide</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid">&times</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(7)">7</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(8)">8</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(9)">9</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid">-</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(4)">4</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(5)">5</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(6)">6</button>
+            <button class="btn btn-primary calculator-button-tall" ng-disabled="calculator.invalid">+</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(1)">1</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(2)">2</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat(3)">3</button>
+            <button class="btn btn-primary calculator-button-wide" ng-disabled="calculator.invalid" ng-click="calculator.concat(0)">0</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid" ng-click="calculator.concat('.')">.</button>
+            <button class="btn btn-primary" ng-disabled="calculator.invalid">=</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

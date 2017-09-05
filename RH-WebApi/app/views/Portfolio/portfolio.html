@@ -1,5 +1,8 @@
 ﻿<div class="container-fluid css-grid-container">
-	<div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white portfolio-grid">
-		<div rh-portfolio-tile ng-repeat="tile in portfolio.tiles | orderBy: 'Id'"></div>
-	</div>
+  <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div rh-portfolio-tile ng-repeat="tile in portfolio.tiles | orderBy: 'Id'"></div>
+    </div>
+  </div>
 </div>

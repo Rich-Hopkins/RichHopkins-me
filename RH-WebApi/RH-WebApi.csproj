@@ -131,6 +131,8 @@
     <Content Include="app\scripts\services\PortfolioService.js" />
     <Content Include="app\scripts\services\SlideService.js" />
     <Content Include="app\scripts\libraries\ui-bootstrap-tpls-2.5.0.min.js" />
+    <Content Include="app\views\calculator\calculator.html" />
+    <Content Include="app\views\calculator\calculatorController.js" />
     <Content Include="app\views\contact\contact.html" />
     <Content Include="app\views\contact\contactController.js" />
     <Content Include="app\views\home\home.html" />

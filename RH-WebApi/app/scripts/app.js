@@ -33,6 +33,12 @@
           controllerAs: 'netflix',
           templateUrl: 'app/views/netflix/netflix.html'
         })
+        .when('/calculator',
+          {
+            controller: 'Calculator',
+            controllerAs: 'calculator',
+            templateUrl: 'app/views/calculator/calculator.html'
+          })
         .otherwise({ redirectTo: '/' });
     }
   ]);
