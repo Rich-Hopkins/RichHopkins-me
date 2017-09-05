@@ -15,7 +15,11 @@
     vm.reset = false;
 
     vm.concat = function (charToAdd) {
-      if (vm.reset) vm.running = '';
+      if (vm.reset) {
+        vm.running = '';
+        vm.operands = [];
+        vm.operators = [];
+      }
       if (!displayNumeric(vm.display) || vm.display === '0' || vm.reset) {
         vm.display = '';
         vm.reset = false;
@@ -61,18 +65,21 @@
     }
 
     vm.equals = function () {
+      console.log(displayNumeric(vm.display));
       if (displayNumeric(vm.display)) {
         vm.operands.push(vm.display);
         vm.running += vm.display;
+        console.log('Went through true');
       } else {
         vm.operators.pop();
         vm.display = vm.operands[vm.operands.length - 1];
+        vm.running = vm.running.substring(0, vm.running.length - 1);
+        console.log('Went through false');
       }
       if (vm.operands.length > 1) {
         vm.display = calculateTotal(vm.operands, vm.operators).toString();
       }
-      vm.operands = [];
-      vm.operators = [];
+      vm.running += '=';
       vm.reset = true;
     }
 
