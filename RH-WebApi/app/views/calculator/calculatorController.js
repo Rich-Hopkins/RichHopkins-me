@@ -65,16 +65,13 @@
     }
 
     vm.equals = function () {
-      console.log(displayNumeric(vm.display));
       if (displayNumeric(vm.display)) {
         vm.operands.push(vm.display);
         vm.running += vm.display;
-        console.log('Went through true');
       } else {
         vm.operators.pop();
         vm.display = vm.operands[vm.operands.length - 1];
         vm.running = vm.running.substring(0, vm.running.length - 1);
-        console.log('Went through false');
       }
       if (vm.operands.length > 1) {
         vm.display = calculateTotal(vm.operands, vm.operators).toString();
