@@ -8,6 +8,7 @@
   function Pomodoro() {
     var vm = this;
     vm.sessionLength = 25;
+    vm.timeLeft = 25;
     vm.breakLength = 5;
     vm.running = false;
 
