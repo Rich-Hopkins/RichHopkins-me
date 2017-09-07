@@ -150,6 +150,8 @@
     <Content Include="app\views\Portfolio\portfolioController.js" />
     <Content Include="app\views\templates\homeCarousel.html" />
     <Content Include="app\views\templates\portfolioTile.html" />
+    <Content Include="app\views\tictactoe\tictactoe.html" />
+    <Content Include="app\views\tictactoe\tictactoeController.js" />
     <Content Include="App_Data\netfilxData.txt" />
     <Content Include="App_Data\portfolioData.txt" />
     <Content Include="App_Data\slideInfo.txt" />

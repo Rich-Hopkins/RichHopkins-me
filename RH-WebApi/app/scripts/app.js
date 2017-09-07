@@ -44,6 +44,12 @@
             controller: 'Pomodoro',
             controllerAs: 'pomodoro',
             templateUrl: 'app/views/pomodoro/pomodoro.html'
+        })
+        .when('/tictactoe',
+          {
+            controller: 'Tictactoe',
+            controllerAs: 'tictactoe',
+            templateUrl: 'app/views/tictactoe/tictactoe.html'
           })
         .otherwise({ redirectTo: '/' });
     }
