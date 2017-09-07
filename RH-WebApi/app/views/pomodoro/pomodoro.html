@@ -15,9 +15,12 @@
         <span>{{pomodoro.sessionLength}}</span>
         <a ng-click="pomodoro.adjustLength('session', '+')">+</a>
       </div>
-      <div class="pomodoro-counter">
-        <H2>Session</H2>
-        <h1>{{pomodoro.timeLeft}}</h1>
+      <div class="pomodoro-counter" ng-click="pomodoro.toggleRun()">
+        <h2>{{pomodoro.mode}}</h2>
+        <div class="progress progress-striped" ng-class="{active: pomodoro.running}">
+          <div class="progress-bar" ng-class="{'progress-bar-success': pomodoro.session, 'progress-bar-info': pomodoro.session===false}" style="width: {{pomodoro.progress}}%"></div>
+        </div>
+        <h1>{{pomodoro.displayRemaining}}</h1>
       </div>
     </div>
   </div>

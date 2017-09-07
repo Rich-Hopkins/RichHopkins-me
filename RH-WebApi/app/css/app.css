@@ -186,7 +186,6 @@ footer {
 .pomodoro-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 4fr;
   text-align: center;
   color: #fff;
   border: 1px solid #064f9f;
@@ -196,9 +195,6 @@ footer {
 .pomodoro-length {
   grid-row: 1;
 }
-
-  .pomodoro-length h4 {
-  }
 
   .pomodoro-length a {
     cursor: pointer;
@@ -212,21 +208,15 @@ footer {
 
 .pomodoro-counter {
   grid-column: span 2;
-  background-color: #064f9f;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1rem;
-  overflow: hidden;
-  padding: 2rem;
-  position: relative;
+  cursor: pointer;
 }
 
-  .pomodoro-counter div {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+  .pomodoro-counter .progress-bar {
+    border: 1px solid #064f9f;
+  }
+
+  .pomodoro-counter .progress {
+    height: 2rem;
   }
 
 /*calculator*/
