@@ -14,7 +14,7 @@
     <div class="col-md-12 col-sm-12">
       <div class="col-md-6 col-sm-12"><h3>Recipe</h3></div>
       <div class="col-md-6 col-sm-12"><h3>Where to find it</h3></div>
-      <div ng-repeat="recipe in cbindex.recipes | orderBy:['Column0', 'Column2'] | filter:category">
+      <div ng-repeat="recipe in cbindex.recipes | orderBy:['Column0', 'Column2'] | filter:{Column1:category}">
         <div class="col-md-6 col-sm-12">
           {{recipe.Column0}}  
         </div>
