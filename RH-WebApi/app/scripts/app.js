@@ -1,7 +1,7 @@
 ﻿(function () {
   'use strict';
 
-  var app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngTouch', 'ngSanitize', 'ui.bootstrap', 'ngResource']);
+  var app = angular.module('app', ['ngRoute', 'ngAnimate', 'ngTouch', 'ngSanitize', 'ui.bootstrap', 'ngResource', 'angular.filter']);
   app.config([
     '$routeProvider', '$locationProvider', '$resourceProvider',
     function ($routeProvider, $locationProvider, $resourceProvider) {
@@ -50,6 +50,12 @@
             controller: 'Tictactoe',
             controllerAs: 'tictactoe',
             templateUrl: 'app/views/tictactoe/tictactoe.html'
+          })
+        .when('/cbindex',
+          {
+            controller: 'CBIndex',
+            controllerAs: 'cbindex',
+            templateUrl: 'app/views/cbindex/cbindex.html'
           })
         .otherwise({ redirectTo: '/' });
     }

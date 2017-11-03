@@ -3,15 +3,15 @@
 
 	angular
 		.module('app')
-		.controller('Home', ['SlideService', Home]);
+		.controller('Home', ['GetDataService', Home]);
 
-	function Home(SlideService) {
+	function Home(GetDataService) {
 		var vm = this;
 		vm.interval = 5000;
 		vm.noWrapSlides = false;
 		vm.active = 0;
 
-		SlideService.getAllSlides()
+	  GetDataService.getPhotoSlides()
 			.then(function (data) {
 				vm.slides = data;
 			},

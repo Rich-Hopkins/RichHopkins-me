@@ -16,7 +16,7 @@ namespace RH_WebApi.Controllers
     {
       //http://whatsonnetflix.com/netflix-hacks/the-netflix-id-bible-every-category-on-netflix/
       var path = HttpRuntime.AppDomainAppPath + "App_Data/netfilxData.txt";
-      List<MovieGenre> genres = new List<MovieGenre>();
+      var genres = new List<MovieGenre>();
 
       try
       {
