@@ -3,14 +3,14 @@
 
   angular
     .module('app')
-    .controller('Netflix', ['GetDataService', Netflix]);
+    .controller('CBIndex', ['GetDataService', CBIndex]);
 
-  function Netflix(GetDataService) {
+  function CBIndex(GetDataService) {
     var vm = this;
-    GetDataService.getAllGenres()
+    GetDataService.getAllRecipes()
       .then(function (data) {
-        vm.genres = data;
-      },
+        vm.recipes = data.Sheet1;
+        },
       function (error) {
         console.log(error);
       });

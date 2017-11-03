@@ -121,8 +121,16 @@ body {
   font-weight: bold;
 }
 
-/*Containers*/
-.header {
+.text-bold {
+  font-weight: bold;
+}
+
+.no-bullet-list {
+  list-style-type: none;
+}
+
+  /*Containers*/
+  .header {
   border-bottom: 1px solid #0C6EDC;
   background-color: rgba(119, 175, 237, .8);
   color: white;
@@ -217,6 +225,49 @@ footer {
 
   .pomodoro-counter .progress {
     height: 2rem;
+  }
+
+  /*Tic Tac Toe*/
+  .tictactoe-body {
+    background: #4d96e8;
+    border: 1px solid #064f9f;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .tictactoe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-gap: .2rem;
+  }
+
+  .tictactoe-box {
+    position: relative;
+    width: 100%;
+  }
+
+    .tictactoe-box:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+  .tictactoe-content {
+    background-color: #0c6edc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .tictactoe-content button {
+    width: 100%;
+    height: 100%;
+    font-size: 6rem;
   }
 
 /*calculator*/
@@ -377,3 +428,4 @@ footer {
     transform: rotate(-360deg);
   }
 }
+

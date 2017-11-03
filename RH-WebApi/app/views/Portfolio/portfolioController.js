@@ -3,16 +3,16 @@
 
 	angular
 		.module('app')
-		.controller('Portfolio', ['PortfolioService', Portfolio]);
+		.controller('Portfolio', ['GetDataService', Portfolio]);
 
-	function Portfolio(PortfolioService) {
+	function Portfolio(GetDataService) {
 		var vm = this;
 
-		PortfolioService.getAllTiles()
+		GetDataService.getPortfolioTiles()
 			.then(function(data) {
 					vm.tiles = data;
 			},
-				function(error){
+										function(error){
 			console.log(error);
 		});
 		

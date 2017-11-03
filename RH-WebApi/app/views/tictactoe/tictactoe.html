@@ -1,0 +1,26 @@
+﻿<div class="container-fluid">
+  <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
+    <h2>Tic Tac Toe</h2>
+    <h2 class="text-danger text-bold">Work In Progress</h2>
+    <p>This game was created to satisfy the Tic Tac Toe game project in <a href="https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game" target="_blank">FreeCodeCamp</a>. Hint: You can't win (Well, you can for now, because I'm not done yet...) 😉 </p>
+    <div class="tictactoe-body col-lg-6 col-lg-offset-3 col-sm-12">
+      <h3 class="text-blue-shadow">FreeCodeCamp</h3>
+      <h4 class="text-blue-shadow">Tic Tac Toe</h4>
+      <h3 ng-show="tictactoe.player!=0">{{tictactoe.currentPlayer}}'s Turn</h3>
+      <h1 class="text-warning text-bold" ng-show="tictactoe.winner>0">{{tictactoe.winnerName}} Wins!</h1>
+      <div class="tictactoe-grid col-md-10 col-md-offset-1 col-sm-12">
+        <button class="btn btn-primary" ng-disabled="tictactoe.active" ng-click="tictactoe.selectPlayer(2)">Play X</button>
+        <button class="btn btn-primary" ng-disabled="tictactoe.active" ng-click="tictactoe.selectPlayer(1)">Play O</button>
+        <button class="btn btn-primary" ng-click="tictactoe.resetGame()">Reset Game</button>
+        <div class="tictactoe-box" ng-repeat="space in tictactoe.spaces | orderBy: 'index'">
+          <div class="tictactoe-content" ng-click="tictactoe.spaceClicked(space)">
+            <button class="btn btn-primary" ng-disabled="!tictactoe.active">
+              <div ng-show="space.value==1">o</div>
+              <div ng-show="space.value==2">x</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
