@@ -121,6 +121,10 @@ body {
   font-weight: bold;
 }
 
+.text-semibold {
+  font-weight: bolder;
+}
+
 .text-bold {
   font-weight: bold;
 }

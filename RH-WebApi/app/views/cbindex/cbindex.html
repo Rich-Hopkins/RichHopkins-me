@@ -2,25 +2,39 @@
   <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
     <h2>Carrie Brown Keto Recipe Index</h2>
     <p><a href="http://www.carriebrown.com" target="_blank">Carrie Brown</a> is a Ketovangelist chef whose recipes are AWESOME! Carrie wants us all to be successful on our ketogenic way of eating, and wants us to enjoy food while we enjoy that success. To use her own words, she wants each of us "to be a Rock Star in the kitchen!" In order to find recipes easier, I have created this simple list of her recipes and where the can be found. I hope this helps you to enjoy the food creations that she has invented for us!</p>
-    <div class="form-group">
-      <label class="col-md-2 control-label" for="category">Category:</label>
-      <div class="col-md-3">
-        <select class="form-control" name="category" id="category" ng-model="cbindex.category">
-          <option ng-repeat="recipe in cbindex.recipes | unique:'Column1' | orderBy:'Column1'">{{recipe.Column1}}</option>
-        </select>
-      </div>
+    <div>
+      <form class="form-inline" role="form">
+        <div class="form-group has-feedback">
+          <label class="control-label" for="category">Category:</label>
+          <div class="input-group">
+            <select class="form-control" name="category" id="category" ng-model="cbindex.category">
+              <option ng-repeat="recipe in cbindex.recipes | unique:'Column1' | orderBy:'Column1'">{{recipe.Column1}}</option>
+            </select>
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove" ng-click="cbindex.catDelete()"></span></span>
+          </div>
+
+          <label class="control-label" for="search" ng-model="searchTerm">Search:</label>
+          <div class="input-group">
+            <input rhSelectOnClick class="col-md-3 form-control" name="search" id="search" type="text" placeholder="Enter search term" autocomplete="off" ng-model="cbindex.search">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-remove" ng-click="cbindex.searchDelete()"></span></span>
+          </div>
+        </div>
+      </form>
+      <small class="text-muted">To search all recipes, click the x to remove category. Your search is filtered by category.</small>
     </div>
 
-    <div class="col-md-12 col-sm-12">
-      <div class="col-md-6 col-sm-12"><h3>Recipe</h3></div>
-      <div class="col-md-6 col-sm-12"><h3>Where to find it</h3></div>
-      <div class="row" ng-repeat="recipe in cbindex.recipes | orderBy:['Column0', 'Column2'] | filter:{Column1:cbindex.category}">
-        <div class="col-md-6 col-sm-12">
-          {{recipe.Column0}}  
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <a href="{{recipe.Column3}}" target="_blank">{{recipe.Column2}}</a>
-        </div>
+    <div class="col-md-6 col-sm-12">
+      <h3 class="text-bold">Recipe</h3>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <h3 class="text-bold">Where to find it</h3>
+    </div>
+    <div class="row" ng-repeat="recipe in cbindex.recipes | orderBy:['Column0', 'Column2'] | filter:{Column1:cbindex.category, Column0:cbindex.search}">
+      <div class="col-md-6 col-sm-12">
+        {{recipe.Column0}}
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <a href="{{recipe.Column3}}" target="_blank">{{recipe.Column2}}</a>
       </div>
     </div>
   </div>

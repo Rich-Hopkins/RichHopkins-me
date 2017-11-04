@@ -7,6 +7,7 @@
 
   function CBIndex(GetDataService) {
     var vm = this;
+    vm.search = '';
     GetDataService.getAllRecipes()
       .then(function (data) {
         vm.recipes = data.Sheet1;
@@ -15,6 +16,14 @@
       function (error) {
         console.log(error);
       });
+
+    vm.catDelete = function() {
+      vm.category = '';
+    };
+
+    vm.searchDelete = function() {
+      vm.search = '';
+    };
 
     return vm;
   };
