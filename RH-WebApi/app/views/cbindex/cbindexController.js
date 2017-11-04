@@ -10,7 +10,8 @@
     GetDataService.getAllRecipes()
       .then(function (data) {
         vm.recipes = data.Sheet1;
-        },
+        vm.category = 'Appetizers';
+      },
       function (error) {
         console.log(error);
       });
