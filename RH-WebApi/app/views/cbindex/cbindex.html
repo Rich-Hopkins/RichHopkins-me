@@ -4,19 +4,25 @@
     <p><a href="http://www.carriebrown.com" target="_blank">Carrie Brown</a> is a Ketovangelist chef whose recipes are AWESOME! Carrie wants us all to be successful on our ketogenic way of eating, and wants us to enjoy food while we enjoy that success. To use her own words, she wants each of us "to be a Rock Star in the kitchen!" In order to find recipes easier, I have created this simple list of her recipes and where the can be found. I hope this helps you to enjoy the food creations that she has invented for us!</p>
     <div>
       <form class="form-inline" role="form">
-        <div class="form-group has-feedback">
-          <label class="control-label" for="category">Category:</label>
-          <div class="input-group">
-            <select class="form-control" name="category" id="category" ng-model="cbindex.category">
-              <option ng-repeat="recipe in cbindex.recipes | unique:'Column1' | orderBy:'Column1'">{{recipe.Column1}}</option>
-            </select>
-            <span class="input-group-addon"><span class="glyphicon glyphicon-remove" ng-click="cbindex.catDelete()"></span></span>
+        <div class="form-group">
+          <div class="col-md-6 col-sm-12">
+            <!--<label class="control-label" for="category">Category:</label>-->
+            <h3 class="text-bold">Category:</h3>
+            <div class="input-group has-feedback">
+              <select class="form-control" name="category" id="category" ng-model="cbindex.category">
+                <option ng-repeat="recipe in cbindex.recipes | unique:'Column1' | orderBy:'Column1'">{{recipe.Column1}}</option>
+              </select>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-remove" ng-click="cbindex.catDelete()"></span></span>
+            </div>
           </div>
 
-          <label class="control-label" for="search" ng-model="searchTerm">Search:</label>
-          <div class="input-group">
-            <input rhSelectOnClick class="col-md-3 form-control" name="search" id="search" type="text" placeholder="Enter search term" autocomplete="off" ng-model="cbindex.search">
-            <span class="input-group-addon"><span class="glyphicon glyphicon-remove" ng-click="cbindex.searchDelete()"></span></span>
+          <div class="col-md-6 col-sm-12">
+            <!--<label class="control-label" for="search" ng-model="searchTerm">Search:</label>-->
+            <h3 class="text-bold">Search:</h3>
+            <div class="input-group has-feedback">
+              <input rhSelectOnClick class="col-md-3 form-control" name="search" id="search" type="text" placeholder="Enter search term" autocomplete="off" ng-model="cbindex.search">
+              <span class="input-group-addon"><span class="glyphicon glyphicon-remove" ng-click="cbindex.searchDelete()"></span></span>
+            </div>
           </div>
         </div>
       </form>
