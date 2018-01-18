@@ -159,7 +159,6 @@
     <Content Include="app\views\templates\portfolioTile.html" />
     <Content Include="app\views\tictactoe\tictactoe.html" />
     <Content Include="app\views\tictactoe\tictactoeController.js" />
-    <Content Include="App_Data\cbindex.accdb" />
     <Content Include="App_Data\netfilxData.txt" />
     <Content Include="App_Data\portfolioData.txt" />
     <Content Include="App_Data\slideInfo.txt" />
@@ -172,6 +171,7 @@
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="manifest.json" />
     <Content Include="App_Data\cbindex.xlsx" />
+    <None Include="Properties\PublishProfiles\RichDev - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\richhopkins - Web Deploy.pubxml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>
