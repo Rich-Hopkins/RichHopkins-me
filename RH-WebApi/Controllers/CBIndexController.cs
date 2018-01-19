@@ -14,6 +14,7 @@ namespace RH_WebApi.Controllers
 {
   public class CBIndexController : ApiController
   {
+    [HttpGet]
     public object GetRecipes()
     {
       var path = HttpRuntime.AppDomainAppPath + "App_Data/cbindex.xlsx";
@@ -36,6 +37,13 @@ namespace RH_WebApi.Controllers
         throw;
       }
       
+    }
+
+    [HttpPost]
+    public object GetRecipesFromCategory(int categoryId)
+    {
+      
+      return new object();
     }
   }
 }
