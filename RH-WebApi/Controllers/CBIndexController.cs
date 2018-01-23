@@ -1,49 +1,112 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web;
 using System.Web.Http;
-using System.Web.Http.ExceptionHandling;
-using RH_WebApi.Models;
+using System.Web.Script.Serialization;
 using ExcelDataReader;
+using Newtonsoft.Json;
+using RH_WebApi.Models;
 
 namespace RH_WebApi.Controllers
 {
   public class CBIndexController : ApiController
   {
+    string sqlConnStr = "";
+
     [HttpGet]
-    public object GetRecipes()
+    public object GetCategories()
     {
-      var path = HttpRuntime.AppDomainAppPath + "App_Data/cbindex.xlsx";
+      var conn = new SqlConnection(sqlConnStr);
+      var command = new SqlCommand("uspGetCategories", conn);
+      command.CommandType = CommandType.StoredProcedure;
+      var dt = new DataTable();
+
       try
       {
+        conn.Open();
+        var da = new SqlDataAdapter(command);
+        da.Fill(dt);
+        conn.Close();
 
-        using (var stream = File.Open(path, FileMode.Open, FileAccess.Read))
-        {
-          using (var reader = ExcelReaderFactory.CreateReader(stream))
-          {
-            var result = reader.AsDataSet();
-            return result;
-          }
-        }
+        var categoryList = ConvertCategories(dt);
+        categoryList.Sort((x, y) => string.Compare(x.Category, y.Category));
 
+        return categoryList;
       }
-      catch (Exception)
+      catch (Exception e)
       {
-
+        Console.WriteLine(e);
         throw;
       }
-      
+      finally
+      {
+        conn.Close();
+      }
     }
 
     [HttpPost]
-    public object GetRecipesFromCategory(int categoryId)
+    public object GetRecipesFromCategory(int? categoryId = null)
     {
-      
-      return new object();
+      var conn = new SqlConnection(sqlConnStr);
+      var command = new SqlCommand("uspGetRecipes", conn);
+      command.CommandType = CommandType.StoredProcedure;
+      command.Parameters.Add("@CategoryID", SqlDbType.Int).Value = categoryId;
+      var dt = new DataTable();
+
+      try
+      {
+        conn.Open();
+        var da = new SqlDataAdapter(command);
+        da.Fill(dt);
+        conn.Close();
+
+        var recipeList = ConvertRecipes(dt);
+
+        return recipeList;
+      }
+      catch (Exception e)
+      {
+        Console.WriteLine(e);
+        throw;
+      }
+      finally
+      {
+        conn.Close();
+      }
     }
+
+    private List<Recipe> ConvertRecipes(DataTable dt)
+    {
+      var RecipeList = new List<Recipe>();
+
+      foreach (DataRow dr in dt.Rows)
+      {
+        var r = new Recipe();
+        r.Name = dr[0].ToString();
+        r.Address = dr[1].ToString();
+        RecipeList.Add(r);
+      }
+
+      return RecipeList;
+    }
+
+    private List<RecipeCategory> ConvertCategories(DataTable dt)
+    {
+      var CategoryList = new List<RecipeCategory>();
+
+      foreach (DataRow dr in dt.Rows)
+      {
+        var rc = new RecipeCategory();
+        rc.CategoryId = int.Parse(dr[0].ToString());
+        rc.Category = dr[1].ToString();
+        CategoryList.Add(rc);
+      }
+
+      return CategoryList;
+    }
+
   }
 }

@@ -8,20 +8,30 @@
   function CBIndex(GetDataService) {
     var vm = this;
     vm.search = '';
-    GetDataService.getAllRecipes()
+    GetDataService.getRecipeCategories()
       .then(function (data) {
-        vm.recipes = data.Sheet1;
-        vm.category = 'Appetizers';
+        vm.categories = data;
+        vm.selectedCategory = vm.categories[0];
       },
       function (error) {
         console.log(error);
       });
 
-    vm.catDelete = function() {
-      vm.category = '';
+    //GetDataService.getRecipes(1)
+    //  .then(function (data) {
+    //    vm.recipes = data;
+    //  },
+    //  function (error) {
+    //    console.log(error);
+    //  });
+
+    //GetDataService.                                                         //TODO create recipe service like email service and call it
+
+    vm.catDelete = function () {
+      vm.selectedCategory = null;
     };
 
-    vm.searchDelete = function() {
+    vm.searchDelete = function () {
       vm.search = '';
     };
 

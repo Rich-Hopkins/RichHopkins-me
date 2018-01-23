@@ -162,6 +162,7 @@
     <Content Include="App_Data\netfilxData.txt" />
     <Content Include="App_Data\portfolioData.txt" />
     <Content Include="App_Data\slideInfo.txt" />
+    <Content Include="BingSiteAuth.xml" />
     <Content Include="browserconfig.xml" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-32x32.png" />
@@ -187,8 +188,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\RecipeCategory.cs" />
     <Compile Include="Models\Email.cs" />
     <Compile Include="Models\MovieGenre.cs" />
+    <Compile Include="Models\Recipe.cs" />
     <Compile Include="Models\Tile.cs" />
     <Compile Include="Models\Slide.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

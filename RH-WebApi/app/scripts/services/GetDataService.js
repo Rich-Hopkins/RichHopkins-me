@@ -3,9 +3,9 @@
 
   angular
     .module('app')
-    .service('GetDataService', ['$http', '$q', GetDataService]);
+    .service('GetDataService', ['$resource','$http', '$q', GetDataService]);
 
-  function GetDataService($http, $q) {
+  function GetDataService($resource, $http, $q) {
     return {
       getAllGenres: function() {
         return $http.get('/api/netflix')
@@ -21,7 +21,7 @@
             });
       },
 
-      getAllRecipes: function () {
+      getRecipeCategories: function () {
         return $http.get('/api/cbindex')
           .then(function (response) {
               if (typeof response.data === 'object') {
@@ -33,6 +33,21 @@
             function (response) {
               return $q.reject(response.data);
             });
+      },
+
+      getRecipes: function($resource) {
+        //return $http.get('/api/cbindex')
+        //  .then(function (response) {
+        //      if (typeof response.data === 'object') {
+        //        return response.data;
+        //      } else {
+        //        return $q.reject(response.data);
+        //      }
+        //    },
+        //    function (response) {
+        //      return $q.reject(response.data);
+        //    });
+        return $resource('/api/cbindex');
       },
 
       getPortfolioTiles: function () {
