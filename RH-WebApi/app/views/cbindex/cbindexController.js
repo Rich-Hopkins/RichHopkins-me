@@ -8,27 +8,26 @@
   function CBIndex(GetDataService) {
     var vm = this;
     vm.search = '';
+    vm.waiting = true;
     GetDataService.getRecipeCategories()
       .then(function (data) {
         vm.categories = data;
         vm.selectedCategory = vm.categories[0];
+        vm.categoryChanged();
       },
       function (error) {
         console.log(error);
       });
 
-    //GetDataService.getRecipes(1)
-    //  .then(function (data) {
-    //    vm.recipes = data;
-    //  },
-    //  function (error) {
-    //    console.log(error);
-    //  });
-
-    //GetDataService.                                                         //TODO create recipe service like email service and call it
+    vm.categoryChanged = function () {
+      vm.waiting = true;
+      GetRecipes(vm.selectedCategory.CategoryId);
+    }
 
     vm.catDelete = function () {
-      vm.selectedCategory = null;
+      vm.waiting = true;
+      vm.selectedCategory = 0;
+      GetRecipes(0);
     };
 
     vm.searchDelete = function () {
@@ -36,5 +35,15 @@
     };
 
     return vm;
+
+    function GetRecipes(selectedCategory) {
+      GetDataService.getRecipes(selectedCategory)
+        .then(function (data) {
+          vm.recipes = data;
+          vm.waiting = false;
+        }, function (error) {
+          console.log(error);
+        });
+    }
   };
 })();

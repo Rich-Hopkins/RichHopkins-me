@@ -345,12 +345,13 @@ footer {
   z-index: 10;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   margin: 0;
 }
 
 .loader {
   position: relative;
+  top: 12rem;
   width: 60px;
   height: 60px;
   border-radius: 50%;

@@ -32,7 +32,7 @@
       vm.sendFailed = false;
       vm.msg.message = vm.msg.message.replace(/(\r\n|\n|\r|\n\r)/gm, '<br/>');
 
-      var sendMessage = new emailService();                                   //TODO create recipe service and call it like this.
+      var sendMessage = new emailService();
       sendMessage.$save(vm.msg)
         .then(function () {
           vm.sendSuccess = true;

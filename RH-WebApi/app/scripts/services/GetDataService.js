@@ -7,6 +7,7 @@
 
   function GetDataService($resource, $http, $q) {
     return {
+      //Fetch Netflix Genres
       getAllGenres: function() {
         return $http.get('/api/netflix')
           .then(function(response) {
@@ -21,6 +22,7 @@
             });
       },
 
+      //Fetch CB Recipe Categories
       getRecipeCategories: function () {
         return $http.get('/api/cbindex')
           .then(function (response) {
@@ -35,21 +37,22 @@
             });
       },
 
-      getRecipes: function($resource) {
-        //return $http.get('/api/cbindex')
-        //  .then(function (response) {
-        //      if (typeof response.data === 'object') {
-        //        return response.data;
-        //      } else {
-        //        return $q.reject(response.data);
-        //      }
-        //    },
-        //    function (response) {
-        //      return $q.reject(response.data);
-        //    });
-        return $resource('/api/cbindex');
+      //Fetch CB Recipes by Cagegory
+      getRecipes: function (catId) {
+        return $http.post('/api/cbindex?categoryId=' + catId)
+          .then(function (response) {
+              if (typeof response.data === 'object') {
+                return response.data;
+              } else {
+                return $q.reject(response.data);
+              }
+            },
+            function (response) {
+              return $q.reject(response.data);
+            });
       },
 
+      //Fetch Tiles for Portfolio Page
       getPortfolioTiles: function () {
         return $http.get('/api/portfolio')
           .then(function (response) {
@@ -64,6 +67,7 @@
             });
       }, 
 
+      //Fetch Photo Slides for Home Page
       getPhotoSlides: function () {
         return $http.get('/api/slides')
           .then(function (response) {
