@@ -172,7 +172,6 @@
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="manifest.json" />
     <Content Include="App_Data\cbindex.xlsx" />
-    <None Include="Properties\PublishProfiles\RichDev - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\richhopkins - Web Deploy.pubxml" />
     <None Include="Web.config">
       <SubType>Designer</SubType>

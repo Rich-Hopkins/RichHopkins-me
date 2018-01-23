@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.IO;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Http;
 using System.Web.Script.Serialization;
 using ExcelDataReader;
@@ -14,7 +15,7 @@ namespace RH_WebApi.Controllers
 {
   public class CBIndexController : ApiController
   {
-    string sqlConnStr = "";
+    string sqlConnStr = WebConfigurationManager.ConnectionStrings["rhmesql"].ConnectionString;
 
     [HttpGet]
     public object GetCategories()
