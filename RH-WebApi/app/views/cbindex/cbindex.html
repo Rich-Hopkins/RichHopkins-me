@@ -52,7 +52,7 @@
       </div>
 
       <!--Recipe list-->
-      <div class="row" ng-repeat="recipe in cbindex.recipes | orderBy: 'Name' | filter: {Name:cbindex.search}">
+      <div class="row" ng-repeat="recipe in cbindex.recipes | orderBy: ['Name', 'Address'] | filter: {Name:cbindex.search}">
         <div class="col-lg-12">
           <a href="http://{{recipe.Address}}" target="_blank">{{recipe.Name}}</a>
         </div>
