@@ -173,9 +173,10 @@
     <Content Include="manifest.json" />
     <Content Include="App_Data\cbindex.xlsx" />
     <None Include="Properties\PublishProfiles\richhopkins - Web Deploy.pubxml" />
-    <None Include="Web.config">
+    <Content Include="Web.config">
       <SubType>Designer</SubType>
-    </None>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
