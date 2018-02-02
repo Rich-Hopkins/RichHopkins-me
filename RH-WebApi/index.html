@@ -37,15 +37,6 @@
 
 <body ng-app="app" ng-cloak>
   <div ng-include src="'/app/views/mainmenu/mainmenu.html'"></div>
-  <div class="col-md-12 col-sm-12 header">
-    <div class="col-md-6 col-md-offset-2 col-sm-12 text-blue-shadow">
-      <h1 class="">Rich Hopkins</h1>
-      <p>Web developer, aviation enthusiast, amateur photographer</p>
-    </div>
-    <div class="col-md-2 col-sm-12 img-header-div">
-      <img class="img-border img-header" src="app/images/Tri-Motor-Copilot.jpg" alt="Rich Hopkins" />
-    </div>
-  </div>
 
   <div ng-view autoscroll="true">
     <!--Views Here-->
@@ -88,5 +79,6 @@
   <script src="app/scripts/Directives/rhCarousel.js"></script>
   <script src="app/scripts/Directives/rhPortfolioTile.js"></script>
   <script src="app/scripts/Directives/rhSelectOnClick.js"></script>
+  <script src="app/scripts/Directives/rhHeader.js"></script>
 </body>
 </html>

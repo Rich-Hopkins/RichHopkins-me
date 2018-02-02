@@ -161,6 +161,11 @@ footer {
   padding: 2rem;
 }
 
+.background-white {
+  background-color: white;
+  background-image: none;
+}
+
 /*Portfolio Tiles*/
 .portfolio-grid {
   display: grid;
