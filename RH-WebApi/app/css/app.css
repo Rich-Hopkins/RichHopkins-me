@@ -157,6 +157,7 @@ footer {
   border: 1px solid grey;
   background-color: rgba(255,255,255,.8);
   margin-top: 3rem;
+  margin-bottom: 3rem;
   font-size: 2rem;
   padding: 2rem;
 }
@@ -164,6 +165,10 @@ footer {
 .background-white {
   background-color: white;
   background-image: none;
+}
+
+.remaining-height {
+  /*min-height: 80vh;*/                     /*Figure this out*/
 }
 
 /*Portfolio Tiles*/
