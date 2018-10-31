@@ -163,12 +163,13 @@ footer {
 }
 
 .background-white {
-  background-color: white;
+  background-color: white !important;
   background-image: none;
 }
 
-.remaining-height {
-  /*min-height: 80vh;*/                     /*Figure this out*/
+.height90 {
+    min-height: 90vh;
+    margin-bottom: -10vh;
 }
 
 /*Portfolio Tiles*/
