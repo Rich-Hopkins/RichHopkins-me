@@ -101,11 +101,13 @@
     <Content Include="app\audio\filling-your-inbox.mp3" />
     <Content Include="app\audio\gets-in-the-way.mp3" />
     <Content Include="app\css\app.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="app\css\bootstrap.css" />
     <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="app\images\4805.png" />
+    <Content Include="app\images\carrieblog.jpg" />
+    <Content Include="app\images\carrieblog_small.jpg" />
     <Content Include="app\images\CBGroup.jpg" />
     <Content Include="app\images\GitHub-Mark-64px.png" />
     <Content Include="app\images\linked-in-54px.png" />

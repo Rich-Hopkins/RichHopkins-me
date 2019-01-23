@@ -1,63 +1,67 @@
 ﻿
 <div class="container-fluid background-white height90">
-  <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
-    <h2>Carrie Brown Keto Recipe Index</h2>
-    <p><a href="http://www.carriebrown.com" target="_blank">Carrie Brown</a> is a classically trained chef whose recipes are keto <span class="text-bold">and AWESOME!</span> Carrie wants us all to be successful on our ketogenic way of eating, and wants us to enjoy food while we enjoy that success. To use her own words, she wants each of us "to be a Rockstar in the kitchen!" In order to find recipes easier, I have created this simple list of her recipes and where the can be found. I hope this helps you to enjoy the food creations that she has invented for us!</p>
-    <div class="col-md-6 col-md-offset-3 col-sm-12 transparent-white">
-      <div>
-        <form role="form">
-
-          <!--Categories-->
-          <div class="form-group">
-            <div class="col-lg-12">
-              <h3 class="text-bold">Category:</h3>
-              <div class="input-group has-feedback">
-                <select class="form-control"
-                        name="category" id="category"
-                        ng-model="cbindex.selectedCategory"
-                        ng-options="category.Category for category in cbindex.categories"
-                        ng-change="cbindex.categoryChanged()"></select>
-
-                <a href class="input-group-addon" ng-click="cbindex.catDelete()"><span class="glyphicon glyphicon-remove"></span></a>
-              </div>
+    <div class="col-md-8 col-md-offset-2 col-sm-12 transparent-white">
+        <h2>Carrie Brown Keto Recipe Index</h2>
+        <p><a href="http://www.carriebrown.com" target="_blank">Carrie Brown</a> is a classically trained chef whose recipes are keto <span class="text-bold">and AWESOME!</span> Carrie wants us all to be successful on our ketogenic way of eating, and wants us to enjoy food while we enjoy that success. To use her own words, she wants each of us "to be a Rockstar in the kitchen!" In order to find recipes easier, I have created this simple list of her recipes and where the can be found. I hope this helps you to enjoy the food creations that she has invented for us!</p>
+        <div class="row">
+            <div class="col-md-3 col-xs-12 sticky">
+                <img class="img-blog" src="app/images/carrieblog_small.jpg" />
             </div>
-          </div>
+            <div class="col-md-6 col-sm-12 transparent-white">
+                <div>
+                    <form role="form">
+                        <!--Categories-->
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <h3 class="text-bold">Category:</h3>
+                                <div class="input-group has-feedback">
+                                    <select class="form-control"
+                                            name="category" id="category"
+                                            ng-model="cbindex.selectedCategory"
+                                            ng-options="category.Category for category in cbindex.categories"
+                                            ng-change="cbindex.categoryChanged()"></select>
 
-          <!--Search-->
-          <div class="form-group">
-            <div class="col-lg-12">
-              <h3 class="text-bold">Search:</h3>
-              <div class="input-group has-feedback">
-                <input rhSelectOnClick class="form-control" name="search" id="search" type="text" placeholder="Enter search term" autocomplete="off" ng-model="cbindex.search">
-                <a href class="input-group-addon" ng-click="cbindex.searchDelete()"><span class="glyphicon glyphicon-remove"></span></a>
-              </div>
+                                    <a href class="input-group-addon" ng-click="cbindex.catDelete()"><span class="glyphicon glyphicon-remove"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Search-->
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <h3 class="text-bold">Search:</h3>
+                                <div class="input-group has-feedback">
+                                    <input rhSelectOnClick class="form-control" name="search" id="search" type="text" placeholder="Enter search term" autocomplete="off" ng-model="cbindex.search">
+                                    <a href class="input-group-addon" ng-click="cbindex.searchDelete()"><span class="glyphicon glyphicon-remove"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <small class="text-muted">To search all recipes, click the x to remove category. Your search is filtered by category.</small>
+
+                        <!--Loading Spinner-->
+                        <div ng-show="cbindex.waiting" class="spinner-container transparent-white">
+                            <div class="loader">
+                                <div class="loader-outer"></div>
+                                <div class="loader-inner"></div>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <h3 class="text-bold">Recipe</h3>
+                </div>
+
+                <!--Recipe list-->
+                <div class="row" ng-repeat="recipe in cbindex.recipes | orderBy: ['Name', 'Address'] | filter: {Name:cbindex.search}">
+                    <div class="col-lg-12">
+                        <a href="http://{{recipe.Address}}" target="_blank">{{recipe.Name}}</a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <small class="text-muted">To search all recipes, click the x to remove category. Your search is filtered by category.</small>
-          
-          <!--Loading Spinner-->
-          <div ng-show="cbindex.waiting" class="spinner-container transparent-white">
-            <div class="loader">
-              <div class="loader-outer"></div>
-              <div class="loader-inner"></div>
-            </div>
-          </div>
-        </form>
-        
-
-
-      </div>
-
-      <div class="col-md-6 col-sm-12">
-        <h3 class="text-bold">Recipe</h3>
-      </div>
-
-      <!--Recipe list-->
-      <div class="row" ng-repeat="recipe in cbindex.recipes | orderBy: ['Name', 'Address'] | filter: {Name:cbindex.search}">
-        <div class="col-lg-12">
-          <a href="http://{{recipe.Address}}" target="_blank">{{recipe.Name}}</a>
         </div>
-      </div>
     </div>
-  </div>
 </div>
