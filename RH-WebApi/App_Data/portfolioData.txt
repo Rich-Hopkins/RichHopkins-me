@@ -6,27 +6,34 @@ My GitHub profile, starting with my most recent repo.
 
 
 1
-First Pentecostal Church
-fpc.jpg
-http://fpcoakwood.org
+Oakwood First Church
+ofc.jpg
+http://oakwoodfirstchurch.com
 I created this site for my church, and used it to teach myself AngularJS and ASP.NET Web API.
 
 
-0
+2
 TheRichWeb
 richweb.jpg
 http://therichweb.com
 This is one of the earliest projects that I did as part of
 FreeCodeCamp
 https://www.freecodecamp.org/rich-hopkins
-0
+3
+Dating App
+DatingApp.jpg
+https://rhdatingapp.herokuapp.com/
+This course was to learn Angular / .NET Core
+Build an app with ASPNET Core and Angular from scratch
+https://www.udemy.com/course/build-an-app-with-aspnet-core-and-angular-from-scratch/
+5
 Event Viewer
 event-viewer.jpg
 http://events.richhopkins.me/
 This is a project that I worked through as part of the
 Angular Fundamentals Pluralsight course
 https://app.pluralsight.com/library/courses/angularjs-fundamentals/
-0
+4
 Travel Site
 travel-site.jpg
 https://rich-hopkins.github.io/travel-site/
