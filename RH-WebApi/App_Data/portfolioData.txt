@@ -15,7 +15,7 @@ I created this site for my church, and used it to teach myself AngularJS and ASP
 2
 TheRichWeb
 richweb.jpg
-http://therichweb.com
+https://therichweb.azurewebsites.net
 This is one of the earliest projects that I did as part of
 FreeCodeCamp
 https://www.freecodecamp.org/rich-hopkins
